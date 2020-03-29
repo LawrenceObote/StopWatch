@@ -10,7 +10,7 @@ class TimerControl extends Component {
         timerStart: 0,
         timerTime: 0
     };
-
+//function that starts the timer using setInterval to count up 
     startTimer = () =>{
         this.setState({
             timerOn: true,
@@ -23,7 +23,7 @@ class TimerControl extends Component {
             });
         }, 10);
     };
-
+//function that pauses timer using the boolean of timerOn.
    pauseTimer = () => {
        this.setState({timerOn: false });
        clearInterval(this.timer);
