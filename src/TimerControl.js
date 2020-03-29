@@ -29,6 +29,7 @@ class TimerControl extends Component {
        clearInterval(this.timer);
    };
 
+//function that resets the time by setting all of the timer counts to 0
    resetTimer = () => {
        this.setState({
            timerStart: 0,
